@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -29,6 +30,12 @@
         thead, tfoot {
             background-color: #EAECF0;
             color: black;
+        }
+
+        thead > tr > th {
+            background-color: #b7b8bb;
+            position: sticky;
+            top: -1px;
         }
         
         tbody tr:nth-child(odd) {
@@ -71,7 +78,7 @@
         <caption>Unidades federativas do Brasil por população</caption>
         <thead>
             <tr>
-                <th> </th>
+                <th scope="col"> </th>
                 <th scope="col">Estado</th>
                 <th scope="col" style="width: 50px;">População</th>
             </tr>
@@ -215,7 +222,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th> </th>
+                <th scope="col"> </th>
                 <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212 583 750</strong></td>
             </tr>
