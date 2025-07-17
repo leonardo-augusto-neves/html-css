@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 011</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 2em;
+            padding: 10px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #especial {
+            background-color: gray;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(190, 190, 190);
+        }
+
+        #conteiner {
+            overflow-x: auto;
+        }
+
+        .especifico {
+            background-color: rgba(0, 0, 0, 0.075);
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <table>
+            <colgroup>
+                <col>
+                <col class="especifico">
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <caption>Dieta Semanal</caption>
+            <thead>
+                <tr id="especial">
+                    <th scope="col">Refeição</th>
+                    <th scope="col">Segunda-feira</th>
+                    <th scope="col">Terça-feira</th>
+                    <th scope="col">Quarta-feira</th>
+                    <th scope="col">Quinta-feira</th>
+                    <th scope="col">Sexta-feira</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">café da manhã</th>
+                    <td>leite</td>
+                    <td>fruta</td>
+                    <td>cereais</td>
+                    <td>leite</td>
+                    <td>fruta</td>
+                </tr>
+                <tr>
+                    <th scope="row">almoço</th>
+                    <td>carne</td>
+                    <td>massa</td>
+                    <td>carne</td>
+                    <td>verdura</td>
+                    <td>massa</td>
+                </tr>
+                <tr>
+                    <th scope="row">lanche da tarde</th>
+                    <td>fruta</td>
+                    <td>fruta</td>
+                    <td>fruta</td>
+                    <td>fruta</td>
+                    <td>fruta</td>
+                </tr>
+                <tr>
+                    <th scope="row">jantar</th>
+                    <td>ovos</td>
+                    <td>ovos</td>
+                    <td>lácteos</td>
+                    <td>lácteos</td>
+                    <td>cereais</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
