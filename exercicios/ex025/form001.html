@@ -25,6 +25,10 @@
         input:month : Cria uma caixa para colocar mês e ano
         input:date : Cria uma caixa para colocar dia, mês e ano
         input:time : Cria uma caixa para colocar horas e minutos
+        input:email : Cria uma caixa para colocar e-mail
+        input:tel : Cria uma caixa para colocar telefone
+        input:chekbox : Cria uma caixa para marcar ou desmarcar
+        input:radio : Cria uma caixa para marcar tendo que marcar só uma vez (REGRA: Para funcionar, as opções tem que ter o mesmo nome)
         input:submit : Cria uma caixa para enviar os dados dentro do input:text
         input:reset : Deleta os dados
 
@@ -41,6 +45,8 @@
                      "username" : Indica que o autocomplete vai funcionar só para nomes de usuários
                      "current-password" : Indica que o autocomplete vai funcionar só para senhas que existam do usuário
                      "new-password" : Indica que o autocomplete vai funcionar só para senhas novas
+                     "email": Indica que o autocomplete vai funcionar só para email
+                     "tel" : Indica que o autocomplete vai funcionar só para telefone
 
         required : Dados obrigatórios para colocar
 
@@ -51,6 +57,12 @@
         size : quantos bytes é o tamanho do formulário
 
         value : O valor inicial do formulário
+
+        fieldset : Serve para separar em grupos os conteúdos dos input
+
+        legend : Legenda do fieldset
+
+        checked : Valor de formulários input:chekbox e input:radio já marcados como valor inicial
 
         minlength : Indica quantas letras podem ter no minímo no formulário input:text
         maxlength : Indica quantas letras podem ter no maxímo no formulário input:text
