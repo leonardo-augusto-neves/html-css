@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        ANATOMIA DOS FORMULÁRIOS
+        FORM
+            P
+             INPUT
+
+        TIPOS DE INPUT
+        input:text : Cria uma caixa para colocar texto
+        input:submit : Cria uma caixa para enviar os dados dentro do input:text
+
+        name : Mais util para HTML e PHP
+        id : Mais util para JavaScript e a tag label
+
+        autocomplete="off" : Desliga o preenchimento automático dos formulários
+
+        label : Faz ligação do parágrafo com o input
+
+        PARA HTML EXISTE DOIS TIPOS DE METODOS DE ENVIO DE DADOS
+        são eles:
+        METODO GET(padrão) : Usar quando os dados não forem sensíveis e quando quiser compartilhar URLs, mas só pode enviar dados até 3000 byts
+        METODO POST : Usar quando os dados forem sensíveis e pode enviar mais de 3000 byts
+    -->
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
