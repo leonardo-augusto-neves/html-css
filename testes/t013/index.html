@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 14</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.99);
+            width: 100vw;
+            height: 100vh;
+        }
+
+        form {
+            position: relative;
+            background-image: linear-gradient(45deg, blue, rgb(115, 115, 255));
+            color: white;
+            max-width: 500px;
+            max-height: 500px;
+            padding: 10px;
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(115, 115, 255, 0.2);
+            transform: translate(-50%, -50%);
+        }
+
+        p {
+            padding: 10px;
+        }
+
+        .sombra {
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .especificacoes {
+            text-indent: 70px;
+            padding: 0px;
+            font-weight: lighter;
+            font-size: 0.8em;
+            color: rgba(255, 255, 255, 0.50);
+        }
+
+        .perto {
+            padding-bottom: 0px;
+            padding-top: 20px;
+        }
+
+        #cima {
+            padding-top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <form action="../../exercicios/ex025/cadastro.php" method="post" autocomplete="off">
+        <p class="perto">
+            <label for="iusuario">usuário: </label>
+            <input type="text" name="usuario" id="iusuario" required placeholder="Nome do Usuário" minlength="8" maxlength="15">
+            <p class="especificacoes">No minímo 8 letras e no maxímo 15 letras</p>
+        </p>
+        <p class="perto" id="cima">
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required placeholder="Senha do Usuário" minlength="5" maxlength="10" >
+            <p class="especificacoes">No minímo 5 letras e no maxímo 10 letras</p>
+        </p>
+        <p>
+            <input type="submit" value="Enviar" class="sombra">
+            <input type="reset" value="Limpar" class="sombra">
+        </p>
+    </form>
+</body>
+</html>
