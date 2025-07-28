@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 014</title>
+    <style>
+        body {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        form {
+            position: relative;
+            height: 290px;
+            width: 202px;
+            border: 1px solid black;
+            padding: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <form action="../../exercicios/ex025/cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inome">Nome Completo: </label> <br>
+            <input type="text" name="nome" id="inome" autocomplete="name">
+        </p>
+        <p>
+            <label for="iemail">E-mail: </label> <br>
+            <input type="email" name="email" id="iemail" autocomplete="email">
+        </p>
+        <p>
+            <label for="">Gênero: </label> <br>
+            <input type="radio" name="genero" id="M"> Masculino
+            <input type="radio" name="genero" id="F"> Feminino
+        </p>
+        <p>
+            <label for="isenha">Senha: </label> <br>
+            <input type="password" name="senha" id="isenha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Confirmar">
+        </p>
+    </form>
+</body>
+</html>
