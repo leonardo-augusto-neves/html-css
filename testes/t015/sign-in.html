@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
 
         * {
             margin: 0px;
             padding: 0px;
-            font-family: 'Open Sans', sans-serif;
+            font-family: 'Instrument Sans', Arial, Helvetica, sans-serif;
         }
 
         body {
@@ -24,109 +24,112 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 400px;
-            height: 500px;
+            border-radius: 10px;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         }
-        
+
         h1 {
-            padding: 10px;
-            margin: 10px 10px 0px 10px;
             text-align: center;
-            font-size: 1.8em;
-            font-weight: bolder;
+            margin: 10px 0px 10px 0px;
         }
 
         h1 > span {
-            background-color: rgb(120, 45, 200);
+            background-color: rgb(150, 10, 210);
             color: white;
-            padding: 5px;
             border-radius: 5px;
+            padding: 5px;
         }
 
-        .center {
+        form > p {
             text-align: center;
-            padding: 5px;
-            font-size: 15px;
+            margin: 25px;
         }
 
-        #confirmar {
-            background-image: linear-gradient(to left, rgb(120, 45, 200), rgb(150, 120, 200) );
-            color: white;
-            display: block;
-            width: 392px;
-            border: 0px;
-            padding: 7px;
-            margin: auto;
-            border-radius: 5px;
-        }
-
-        #confirmar:hover {
-            background-image: linear-gradient(to right, rgb(120, 45, 200), rgb(150, 120, 200));
-        }
-
-
-        #right {
-            color: rgb(120, 45, 200);
-            text-align: right;
-            margin: 10px 10px 30px 10px;
+        #margin {
+            margin-bottom: 55px;
         }
 
         strong {
             color: red;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .input {
-            width: 392px;
-            border: 1px solid gray;
-            border-radius: 3px;
-            padding: 4.5px;
-        }
-
-        label {
-            font-size: 15px;
-            font-weight: 500;
-        }
-
-        #margin {
-            margin-bottom: 40px;
-        }
-
-        .margin {
-            margin-top: 10px;
-        }
-
-        #padding {
-            padding: 20px;
-            margin-bottom: 10px;
+        div {
+            margin: 10px 10px 0px 10px;
         }
 
         a {
-            color: rgb(120, 45, 200);
+            color: rgb(150, 10, 210);
             text-decoration: none;
+        }
+
+        #right {
+            display: block;
+            color: rgb(150, 10, 210);
+            text-decoration: none;
+            text-align: right;
+        }
+
+        #confirmar {
+            background-image: linear-gradient(to left, rgb(150, 10, 210), rgb(180, 110, 210));
+            color: white;
+            width: 100%;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 0px;
+            padding: 10px;
+        }
+
+        #confirmar:hover {
+            background-image: linear-gradient(to right, rgb(150, 10, 210), rgb(180, 110, 210));
+        }
+
+        .box {
+            width: 100%;
+            height: 16px;
+            border-radius: 3px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            padding: 5px;
+            margin: 3px 0px;
+        }
+
+        .box:focus {
+            outline: none;
+            border: 1px solid rgba(180, 110, 210, 0.6);
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
 <body>
     <form action="../../exercicios/ex025/cadastro.php" method="post" autocomplete="off">
-        <h1><span>Welcome</span> Back</h1>
-        <p class="center" id="margin">sign in to continue</p>
-        <p class="margin">
+        <h1>
+            <span>Welcome</span> Back
+        </h1>
+        <p id="margin">
+            sign in to continue
+        </p>
+        <div>
             <label for="iemail">Email: <strong>*</strong></label> <br>
-            <input type="email" name="email" id="iemail" required placeholder="your@gmail.com" class="input" >
-        </p>
-        <p class="margin">
+            <input type="email" name="email" id="iemail" required class="box">
+        </div>
+        <div>
             <label for="isenha">Password: <strong>*</strong></label> <br>
-            <input type="password" name="senha" id="isenha" required class="input">
+            <input type="password" name="senha" id="isenha" required class="box">
+        </div>
+        <p>
+            <a href="#" id="right">Forget password?</a>
         </p>
-        <p id="right" ><a href="#">Forget password?</a></p>
         <p>
             <input type="submit" value="Sign In" id="confirmar">
         </p>
-        <p class="center" id="padding">Dont have an account ? <a href="sing-up.html">Sing Up</a></p>
+        <p>
+            Dont have an account ? <a href="">Sign Up</a>
+        </p>
         <hr>
-        <p class="center">Or continue with</p>
+        <p>
+            Or continue with
+        </p>
     </form>
 </body>
 </html>
