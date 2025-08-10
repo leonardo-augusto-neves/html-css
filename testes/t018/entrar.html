@@ -5,10 +5,171 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
     <title>Entrar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+        :root {
+            --cor1: #5b6644d3;
+            --cor2: #586d29;
+            --cor3: #405413;
+            --cor4: #334210;
+
+            --fonte-padrao: "DM Mono", sans-serif;
+            --fonte-especial: "Great Vibes", serif;
+            --fonte-sub: "Rochester", serif;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            position: relative;
+            height: 100vh;
+            background: #704538 url(imagens/fundo.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
+        }
+
+        form > h1 {
+            font-family: var(--fonte-especial);
+            justify-content: center;
+            text-align: center;
+            margin: 10px 0px 50px 0px;
+        }
+
+
+        form > p > label {
+            font-family: var(--fonte-padrao);
+            margin: 0px 0px 0px 15px;
+        }
+
+        form > p > input {
+            width: 200px;
+            border-radius: 5px;
+            border: 0px;
+            padding: 5px 10px;
+            margin: 2px 10px 10px 10px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        form > p > input:focus {
+            outline: none;
+            box-shadow: 3px 3px 4px var(--cor1);
+        }
+
+        form span {
+            background-color: var(--cor3);
+            color: white;
+            font-family: var(--fonte-especial);
+            border-radius: 10px;
+            padding: 8px;
+        }
+
+        form strong {
+            color: red;
+        }
+
+        .input {
+            margin: 5px 20px 5px 20px; 
+        }
+
+        #submit {
+            text-align: center;
+            justify-content: center;
+            margin: 20px 0px 0px 0px;
+        }
+
+        #button {
+            background-image: linear-gradient(to right, var(--cor3), var(--cor2));
+            color: white;
+            font-family: var(--fonte-padrao);
+            width: 200px;
+            border-radius: 10px;
+            border: 0px;
+            padding: 7.5px;
+            margin-top: 20px;
+            cursor: pointer;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        #button:hover {
+            background-image: linear-gradient(to left, var(--cor3), var(--cor2));
+        }
+
+        nav {
+            background-color: var(--cor3);
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            padding-right: 10px;
+            box-sizing: content-box;
+        }
+
+        nav > a {
+            flex: 0.01;
+            background-color: var(--cor3);
+            color: black;
+            justify-content: right;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 8px 3px 8px 2px;
+            transition: 0.3s all ease;
+            box-sizing: content-box;
+        }
+
+        nav > a:hover {
+            flex: 0.24;
+            background-color: var(--cor4);
+            color: var(--cor2);
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            box-sizing: content-box;
+        }
+    </style>
 </head>
 <body>
-    <form action="../../exercicios/ex025/cadastro.php" method="post">
-        
+    <nav>
+        <a href="home.html" target="_self">Home</a>
+        <a href="entrar.html" target="_self">Entrar</a>
+        <a href="conta.html" target="_self">Conta</a>
+        <a href="contato.html" target="_self">Contato</a>
+    </nav>
+    <form action="../../exercicios/ex025/cadastro.php" method="post" autocomplete="on">
+        <h1>
+            <span>Welcome</span> Back
+        </h1>
+        <p class="input">
+            <label for="igmail">G-mail: <strong>*</strong></label> <br>
+            <input type="email" name="gmail" id="igmail" required autocomplete="email">
+        </p>
+        <p class="input">
+            <label for="isenha">Senha: <strong>*</strong></label> <br>
+            <input type="password" name="senha" id="isenha" require autocomplete="current-password">
+        </p>
+        <p id="submit">
+            <input type="submit" value="Confirmar" id="button">
+        </p>
     </form>
 </body>
 </html>
