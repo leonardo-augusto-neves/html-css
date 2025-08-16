@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-
+                <img src="imagens/roxo.jpg" alt="">
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no ambiente.</p>
-                <form action="login.php" method="post">
-                    
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <p>
+                        <label for="iemail"><i class="material-icons">person</i></label>
+                        <input type="text" name="email" id="iemail" required>
+                    </p>
+                    <p>
+                        <label for="isenha"><i class="material-icons">vpn_key</i></label>
+                        <input type="password" name="senha" id="isenha" required>
+                    </p>
+                    <p>
+                        <input type="submit" value="Entrar">
+                    </p>
+                    <p>
+                        <a href="#">Esqueci a senha<i class="material-icons">email</i></a>
+                    </p>
                 </form>
             </div>
         </section>
