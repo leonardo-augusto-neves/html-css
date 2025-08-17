@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+        :root {
+            --cor1: #00AEFF;
+            --cor3: #3986AA;
+            --cor4: #384C55;
+            --cor5: #FF8700;
+
+            --fonte-padrao: "Libertinus Sans", sans-serif;
+            --fonte-especial: "Rochester", serif;
+            --fonte-sub: "Merienda", sans-serif;
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: rgb(1, 1, 1);
+        }
+
+        nav {
+            background-color: black;
+            text-align: right;
+            padding: 8px 30px 8px 8px;
+        }
+
+        nav > a {
+            background-color: black;
+            color: var(--cor1);
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 5px;
+            transition: 0.3s;
+        }
+
+        nav > a:hover {
+            border: 1px solid var(--cor1);
+        }
+        header {
+            
+        }
+
+        header > h1 {
+            font-family: var(--fonte-especial);
+            font-size: 3em;
+            color: var(--cor1);
+            padding: 20px;
+        }
+
+        header > div {
+            display: inline-block;
+            width: 350px;
+            text-indent: 30px;
+            text-align: justify;
+            margin: 20px 80px 20px 30px;
+        }
+
+        header > div > p {
+            font-family: var(--fonte-padrao);
+            font-size: 18px;
+            display: inline;
+            color: white;
+        }
+
+        header > img {
+            display: inline;
+            justify-content: right;
+            border-radius: 50%;
+            width: 250px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 15px var(--cor5);
+        }
+
+        main {
+            
+        }
+
+        main  > h1 {
+            
+        }
+
+        main > section {
+            
+        }
+
+        main > section > h2 {
+            
+        }
+
+        main > section > article {
+           
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <nav id="menu">
+        <a href="#">Sobre Mim</a>
+        <a href="#">Projetos</a>
+        <a href="#">Contato</a>
+    </nav>
+    <header id="sobre-mim">
+        <h1>Desenvolvedor Front-end</h1>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, delectus, possimus suscipit consequuntur cupiditate cum nemo ex odio velit iure dolore harum amet assumenda corporis laborum beatae tempore quisquam mollitia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam veniam aliquid fuga ratione odit distinctio magni cumque! Et, accusamus deleniti, ad ab harum eos id dignissimos facilis quam laboriosam unde.</p>
+        </div>
+        <img src="imagens/leonardo-150.jpg" alt="Imagem de mim">
+    </header>
+    <main id="Projetos">
+        <section>
+            <article>
+               
+            </article>
+        </section>
+        <section>
+            <article>
+                
+            </article>
+        </section>
+        <section>
+            <article>
+                
+            </article>
+        </section>
+    </main>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <h1>
+            Entre em Contato
+        </h1>
+        <p>
+            <label for="iemail">E-mail: </label>
+            <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="">
+        </p>
+        <p>
+            <label for="isenha">Senha: </label>
+            <input type="password" name="senha" id="isenha" required autocomplete="current-password" placeholder="">
+        </p>
+        <p>
+            <input type="submit" value="Confirmar">
+        </p>
+    </form>
+    <footer id="Contato">
+        
+    </footer>
+</body>
+</html>
