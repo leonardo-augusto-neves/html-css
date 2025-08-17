@@ -11,7 +11,7 @@
     <main>
         <section id="login">
             <div id="imagem">
-                <img src="imagens/roxo.jpg" alt="Imagem de cristais">
+                <img src="imagens/roxo.jpg" alt="Imagem de ametistas">
             </div>
             <div id="formulario">
                 <h1>Login</h1>
@@ -19,21 +19,22 @@
                 <form action="login.php" method="post" autocomplete="on">
                     <p class="input">
                         <label for="iemail"><i class="material-icons">person</i></label>
-                        <input type="text" name="email" id="iemail" required placeholder="seu e-mail" autocomplete="email" class="text">
+                        <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="seu e-mail" class="box">
                     </p>
                     <p class="input">
                         <label for="isenha"><i class="material-icons">vpn_key</i></label>
-                        <input type="password" name="senha" id="isenha" required placeholder="sua senha" autocomplete="current-password" class="text">
+                        <input type="password" name="senha" id="isenha" required autocomplete="current-password" placeholder="sua senha"  class="box"> 
                     </p>
-                    <p>
-                        <input type="submit" value="Entrar" id="submit">
+                    <p id="confirmar">
+                        <input type="submit" value="Entrar" id="button">
                     </p>
-                    <p id="paragrafo">
-                        <a href="#" id="link" >Esqueci a senha <i class="material-icons" id="color">email</i></a>
+                    <p id="senha">
+                        <a href="#" target="_blank" id="esqueci">Esqueci a senha <i class="material-icons">mail</i></a>
                     </p>
                 </form>
             </div>
         </section>
     </main>
 </body>
-</html>
+</html
+       
