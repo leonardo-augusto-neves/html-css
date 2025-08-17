@@ -24,17 +24,18 @@ section {
     transform: translate(-50%, -50%);
     background-color: white;
     max-width: 250px;
-    height: 470px;
-    border-radius: 10px;
+    max-height: 500px;
+    border-radius: 20px;
 }
 
 #imagem > img {
+    background-color: var(--cor1);
     width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 #formulario {
-    padding: 10px;
+    padding: 5px;
 }
 
 #formulario > h1 {
@@ -49,6 +50,7 @@ section {
     font-size: 12px;
     text-align: justify;
     line-height: 15px;
+    margin: 0px 5px 0px 5px;
 }
 
 .input {
@@ -100,7 +102,7 @@ i {
 
 #senha {
     text-align: center;
-    margin: 5px;
+    margin: 13px 0px 30px 0px;
 }
 
 #esqueci {
@@ -111,9 +113,16 @@ i {
     text-align: center;
     border-radius: 8px;
     border: 1px solid var(--cor1);
-    padding: 13px;
+    padding: 13px 50px;
 }
 
 #esqueci:hover {
     background-color: #6CD3CF;
+}
+
+#icon-especial {
+    color: #2D6462;
+    font-size: 1em;
+    width: 10px;
+    transform: translateY(-5%);
 }
