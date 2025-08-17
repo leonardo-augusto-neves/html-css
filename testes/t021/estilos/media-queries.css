@@ -20,19 +20,6 @@ Grandes telas: acima de 1200px
 
 @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 992px) {
     body {
-        background-image: linear-gradient(to bottom, var(--cor2), var(--cor1) 70%);
-    }
-
-    section {
-        
-    }
-
-    #imagem  {
-        
-    }
-
-    #formulario {
-
+        background-image: linear-gradient(to bottom, var(--cor2), var(--cor1) 90%);
     }
 }
-

@@ -24,13 +24,13 @@ section {
     transform: translate(-50%, -50%);
     background-color: white;
     max-width: 250px;
-    max-height: 500px;
+    max-height: 700px;
     border-radius: 20px;
 }
 
-#imagem > img {
-    background-color: var(--cor1);
-    width: 100%;
+#imagem {
+    background: #5F2C82 url(../imagens/metal.jpg) no-repeat left bottom;
+    background-size: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -42,14 +42,14 @@ section {
     font-weight: bolder;
     font-size: 24px;
     text-align: center;
-    margin: 0px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
 #formulario > p {
     font-weight: normal;
-    font-size: 12px;
+    font-size: 12.3px;
     text-align: justify;
-    line-height: 15px;
+    line-height: 16px;
     margin: 0px 5px 0px 5px;
 }
 
@@ -69,13 +69,13 @@ i {
 
 .box {
     background-color: var(--cor1);
-    font-size: 1em;
+    font-size: 0.9em;
     height: 100%;
-    width: 160px;
-    border-radius: 8px;
+    width: 170px;
+    border-radius: 4.7px;
     border: 0px;
-    padding: 7px;
-    transform: translateY(-12%);
+    padding: 12px 8px 12px 8px;
+    transform: translate(2%, -2%);
 }
 
 .box:focus {
@@ -102,7 +102,7 @@ i {
 
 #senha {
     text-align: center;
-    margin: 13px 0px 30px 0px;
+    margin: 13px 0px 40px 0px;
 }
 
 #esqueci {
