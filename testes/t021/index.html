@@ -11,25 +11,25 @@
     <main>
         <section id="login">
             <div id="imagem">
-                <img src="imagens/roxo.jpg" alt="">
+                <img src="imagens/roxo.jpg" alt="Imagem de cristais">
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post" autocomplete="on">
-                    <p>
+                    <p class="input">
                         <label for="iemail"><i class="material-icons">person</i></label>
-                        <input type="text" name="email" id="iemail" required>
+                        <input type="text" name="email" id="iemail" required placeholder="seu e-mail" autocomplete="email" class="text">
                     </p>
-                    <p>
+                    <p class="input">
                         <label for="isenha"><i class="material-icons">vpn_key</i></label>
-                        <input type="password" name="senha" id="isenha" required>
+                        <input type="password" name="senha" id="isenha" required placeholder="sua senha" autocomplete="current-password" class="text">
                     </p>
                     <p>
-                        <input type="submit" value="Entrar">
+                        <input type="submit" value="Entrar" id="submit">
                     </p>
-                    <p>
-                        <a href="#">Esqueci a senha<i class="material-icons">email</i></a>
+                    <p id="paragrafo">
+                        <a href="#" id="link">Esqueci a senha<i class="material-icons">email</i></a>
                     </p>
                 </form>
             </div>
