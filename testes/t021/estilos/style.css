@@ -24,16 +24,16 @@ body {
     transform: translate(-50%, -50%);
     background-color: white;
     max-width: 250px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 img {
     max-width: 100%;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
 }
 
 #formulario {
-    padding: 10px;
+    padding: 5px;
     margin: 0px;
     text-align: center;
 }
@@ -86,15 +86,19 @@ i {
 }
 
 #paragrafo {
-    margin-top: 10px;    
+    margin: 20px 0px 35px 0px; 
 }
 
 #link {
     background-color: white;
-    color: #53AAA7;
+    color: #2D6462;
     text-decoration: none;
     border-radius: 10px;
     border: 1px solid var(--cor1);
-    padding: 11.5px;
-    margin-top: ;  
+    padding: 11.5px;  
+}
+
+#color {
+    color: #2D6462;
+    font-size: 1em;
 }
